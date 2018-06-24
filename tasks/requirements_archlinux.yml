@@ -16,6 +16,8 @@
     - git
     - sqlite
     - redis
+    - python-pip
+    - gcc
   tags:
     - pretalx
   notify:
