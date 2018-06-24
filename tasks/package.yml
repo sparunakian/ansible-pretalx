@@ -31,6 +31,17 @@
   tags:
     - pretalx
 
+- name: Install dependencies from pip
+  pip:
+    name: redis,gunicorn
+    executable: pip3
+    extra_args: --user
+    state: latest
+  become: true
+  become_user: "{{ pretalx_system_user }}"
+  tags:
+    - pretalx
+
 - name: Configure pretalx
   template:
     src: pretalx.cfg.j2
