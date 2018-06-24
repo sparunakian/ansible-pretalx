@@ -192,7 +192,7 @@
   tags:
     - pretalx
 
-- name:
+- name: Configure nginx
   template:
     src: nginx.conf
     dest: "{{ pretalx_nginx_path }}/pretalx_{{ pretalx_instance_identifier }}.conf"
