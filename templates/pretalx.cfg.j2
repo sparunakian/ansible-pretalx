@@ -19,8 +19,12 @@ url = {{ pretalx_url }}
 from = {{ pretalx_mail_from }}
 host = {{ pretalx_mail_host }}
 port = {{ pretalx_mail_port }}
-{% if pretalx_mail_user is defined%}user = {{ pretalx_mail_user }}{% endif %}
-{% if pretalx_mail_password is defined%}password = {{ pretalx_mail_password }}{% endif %}
+{% if pretalx_mail_user is defined%}
+user = {{ pretalx_mail_user }}
+{% endif %}
+{% if pretalx_mail_password is defined%}
+password = {{ pretalx_mail_password }}
+{% endif %}
 tls = {{ pretalx_mail_tls }}
 ssl = {{ pretalx_mail_ssl }}
 
